@@ -25,10 +25,17 @@ mkdir "%appdata%\MysticClient"
 echo %path%> "%appdata%\MysticClient\instpath.txt"
 goto install
 :update
+taskkill /f /im Launcher.bat
 set /p path=<"%appdata%\MysticClient\instpath.txt"
 del /f /s /q "%path%.minecraft\versions\Mystic Client.jar"
 del /f /s /q "%path%.minecraft\versions\Mystic Client.json"
 del /f /s /q "%path%.minecraft\versions\mods\*.*"
+del /f /s /q "%programdata%\Microsoft\Windows\Start Menu\Programs\Mystic Client\Mystic Client.lnk"
+del /f /s /q "%programdata%\Microsoft\Windows\Start Menu\Programs\Mystic Client\卸载Mystic Client.lnk"
+del /f /s /q "%userprofile%\Desktop\Mystic Client.lnk"
+del /f /s /q "%appdata%\MysticClient\instpath.txt"
+del /f /s /q "%appdata%\MysticClient\Launcher.bat"
+del /f /s /q "%appdata%\MysticClient\Icon.ico"
 :install
 del /f /s /q "%appdata%\MysticClient\Launcher.bat"
 del /f /s /q "%appdata%\MysticClient\Uninstaller.bat"
