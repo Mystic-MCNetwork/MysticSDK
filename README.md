@@ -17,5 +17,5 @@ Mystic Client 客户端仅在 Mystic SMP 中以内部客户端的形式分发。
 
 END
 -
-MysticSDK was developed by rabvat w/ ♥.<br>
+MysticSDK was developed by rabvat w/ ♥,<br>
 Jul, 2026. Team MysticMC
